@@ -18,11 +18,11 @@ pipe.load_lora_weights("mary-ruiliii/genshin-style_character_generator", weight_
 
 # Invoke pipeline to generate image
 image = pipe(
-    prompt = "genshen-style character",
+    prompt = "genshen anime boy",
     num_inference_steps=50,
     height=400,
     width=400,
     # guidance_scale=7.0,
 ).images[0]
-image.save("test400-3.png")
+image.save("anime.png")
 
