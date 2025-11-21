@@ -20,9 +20,9 @@ pipe.load_lora_weights("mary-ruiliii/genshin-style_character_generator", weight_
 image = pipe(
     prompt = "genshen-style character",
     num_inference_steps=50,
-    height=1024,
-    width=1024,
+    height=400,
+    width=400,
     # guidance_scale=7.0,
 ).images[0]
-image.save("test.png")
+image.save("test400.png")
 
