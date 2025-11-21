@@ -24,5 +24,5 @@ image = pipe(
     width=400,
     # guidance_scale=7.0,
 ).images[0]
-image.save("test400.png")
+image.save("test400-3.png")
 
