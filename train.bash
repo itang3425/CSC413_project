@@ -1,0 +1,24 @@
+accelerate launch train_text_to_image_lora_sdxl.py \
+ --pretrained_model_name_or_path="stabilityai/stable-diffusion-xl-base-1.0" \
+  --pretrained_vae_model_name_or_path="madebyollin/sdxl-vae-fp16-fix" \
+  --dataset_name="mary-ruiliii/Genshin-character-portrait-image" \
+  --image_column="image" \
+  --caption_column="text" \
+  --validation_prompt="" \
+  --num_validation_images=0 \
+  --validation_epochs=999999 \
+  --resolution=400 \
+  --random_flip \
+  --train_batch_size=1 \
+  --num_train_epochs=10 \
+  --checkpointing_steps=500 \
+  --gradient_accumulation_steps=4 \
+  --learning_rate=1e-04 \
+  --lr_warmup_steps=0 \
+  --report_to="wandb" \
+  --resume_from_checkpoint="latest" \
+  --dataloader_num_workers=8 \
+  --allow_tf32 \
+  --mixed_precision="fp16" \
+  --push_to_hub \
+  --hub_model_id="genshin-style_character_generator"
