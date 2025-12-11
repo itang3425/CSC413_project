@@ -1,0 +1,1 @@
+/home/ubuntu/diffusers/examples/textual_inversion/textual_inversion_sdxl_isaversion.py

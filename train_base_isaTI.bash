@@ -1,0 +1,15 @@
+accelerate launch textual_inversion_sdxl_isaversion.py \
+  --pretrained_model_name_or_path"=stabilityai/stable-diffusion-xl-base-1.0" \
+  --train_data_dir="mary-ruiliii/Genshin-character-portrait-image-character-data-all" \
+  --learnable_property="object" \
+  --mixed_precision="bf16" \
+  --resolution=400 \
+  --train_batch_size=1 \
+  --gradient_accumulation_steps=4 \
+  --max_train_steps=500 \
+  --learning_rate=5.0e-04 \
+  --scale_lr \
+  --lr_scheduler="constant" \
+  --lr_warmup_steps=0 \
+  --save_as_full_pipeline \
+  --output_dir="./Genshin_ti_sdxl_base"
