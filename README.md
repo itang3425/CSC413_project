@@ -77,3 +77,8 @@ notebooks/CSC413_pipeline.ipynb
 ```
 Follow the prompts in the cells!
 ```
+
+# Train
+
+- Use `./train.bash` to train
+- Use `python ./load.py` to inference and get output.
