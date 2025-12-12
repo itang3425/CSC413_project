@@ -1,2 +1,8 @@
 # CSC413_project
-原神启动
+
+## LoRA Diffusion
+
+- Use `./train.bash` to train
+- Use `python ./load.py` to inference and get output.
+
+

@@ -1,0 +1,19 @@
+accelerate launch train_text_to_image_lora.py \
+  --pretrained_model_name_or_path="stable-diffusion-v1-5/stable-diffusion-v1-5" \
+  --dataset_name="mary-ruiliii/Genshin-character-portrait-image" \
+  --image_column="image" \
+  --caption_column="text" \
+  --num_train_epochs=300 \
+  --validation_prompt="A human Genshin-style character. uses a claymore. has a Electro vision. short female body figure." \
+  --num_validation_images=4 \
+  --validation_epochs=10 \
+  --resolution=512 \
+  --train_batch_size=1 \
+  --learning_rate=2e-5 \
+  --lr_warmup_steps=0 \
+  --dataloader_num_workers=8 \
+  --allow_tf32 \
+  --mixed_precision="fp16" \
+  --resume_from_checkpoint="latest" \
+  --output_dir="/home/ubuntu/sd21_genshin_lora_base" \
+  --report_to="wandb"
