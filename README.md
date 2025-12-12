@@ -62,7 +62,7 @@ The resulting vector replaces the final token in SDXL’s conditioning sequence,
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/itang3425/CSC413_project.git
-cd genshin-character-generation
+cd CSC413_project
 ```
 
 ### 2. Install dependencies
