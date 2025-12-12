@@ -76,7 +76,6 @@ Open:
 notebooks/CSC413_pipeline.ipynb
 ```
 Follow the prompts in the cells!
-```
 
 # Train
 
